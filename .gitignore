@@ -1,0 +1,9 @@
+diagrams
+logs
+airflow.cfg
+airflow.db
+note.txt
+unittests.cfg
+webserver_config.py
+.idea
+airflow-webserver.pid

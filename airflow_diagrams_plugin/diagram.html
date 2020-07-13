@@ -1,0 +1,15 @@
+{% extends "airflow/master.html" %}
+
+{% block page_title %}Diagrams - Airflow{% endblock %}
+
+{% block content %}
+    {{ super() }}
+    {% for diagram in diagrams -%}
+    <h4>{{ diagram["title"] }}</h4>
+    {{ diagram["code"] }}
+    {% endfor %}
+{% endblock %}
+
+{% block tail %}
+    {{ super() }}
+{% endblock %}
